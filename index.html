@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Atividades Infantis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .activity-info {
+            height: 20%;
+            padding: 8px;
+            text-align: center;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .activity-info p {
+            color: #555;
+            font-weight: 600;
+            font-size: 0.9em;
+            line-height: 1.2;
+        }
+
+        .activity-number {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Galeria de Atividades Infantis 🎨</h1>
+        
+        <div class="gallery">
+            <!-- Atividade 1 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FF6B6B/FFFFFF?text=Pintura" alt="Atividade de Pintura">
+                <div class="activity-info">
+                    <span class="activity-number">1</span>
+                    <p>Pintura com dedos</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 2 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/4ECDC4/FFFFFF?text=Desenho" alt="Atividade de Desenho">
+                <div class="activity-info">
+                    <span class="activity-number">2</span>
+                    <p>Desenho livre</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 3 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/45B7D1/FFFFFF?text=Colorir" alt="Atividade de Colorir">
+                <div class="activity-info">
+                    <span class="activity-number">3</span>
+                    <p>Colorir animais</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 4 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/96CEB4/FFFFFF?text=Massinha" alt="Atividade com Massinha">
+                <div class="activity-info">
+                    <span class="activity-number">4</span>
+                    <p>Modelar massinha</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 5 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFEAA7/000000?text=Origami" alt="Atividade de Origami">
+                <div class="activity-info">
+                    <span class="activity-number">5</span>
+                    <p>Origami simples</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 6 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/DDA0DD/FFFFFF?text=Colagem" alt="Atividade de Colagem">
+                <div class="activity-info">
+                    <span class="activity-number">6</span>
+                    <p>Colagem criativa</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 7 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/F0E68C/000000?text=Quebra-cabeça" alt="Atividade de Quebra-cabeça">
+                <div class="activity-info">
+                    <span class="activity-number">7</span>
+                    <p>Quebra-cabeça</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 8 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/98FB98/000000?text=Leitura" alt="Atividade de Leitura">
+                <div class="activity-info">
+                    <span class="activity-number">8</span>
+                    <p>Hora da leitura</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 9 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/B0E0E6/000000?text=Música" alt="Atividade Musical">
+                <div class="activity-info">
+                    <span class="activity-number">9</span>
+                    <p>Brincadeira musical</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 10 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FBCEB1/000000?text=Teatro" alt="Atividade de Teatro">
+                <div class="activity-info">
+                    <span class="activity-number">10</span>
+                    <p>Teatro de fantoches</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 11 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/C1E1C1/000000?text=Dança" alt="Atividade de Dança">
+                <div class="activity-info">
+                    <span class="activity-number">11</span>
+                    <p>Dança divertida</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 12 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFB6C1/000000?text=Jogos" alt="Atividade de Jogos">
+                <div class="activity-info">
+                    <span class="activity-number">12</span>
+                    <p>Jogos educativos</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 13 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/E6E6FA/000000?text=Ciência" alt="Atividade de Ciência">
+                <div class="activity-info">
+                    <span class="activity-number">13</span>
+                    <p>Pequeno cientista</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 14 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFF0F5/000000?text=Jardim" alt="Atividade de Jardinagem">
+                <div class="activity-info">
+                    <span class="activity-number">14</span>
+                    <p>Jardim divertido</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 15 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/F5F5DC/000000?text=Culinária" alt="Atividade de Culinária">
+                <div class="activity-info">
+                    <span class="activity-number">15</span>
+                    <p>Culinária infantil</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 16 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFDAB9/000000?text=Blocos" alt="Atividade com Blocos">
+                <div class="activity-info">
+                    <span class="activity-number">16</span>
+                    <p>Blocos de montar</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 17 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFFACD/000000?text=Memória" alt="Jogo da Memória">
+                <div class="activity-info">
+                    <span class="activity-number">17</span>
+                    <p>Jogo da memória</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 18 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/E0FFFF/000000?text=Labirinto" alt="Atividade de Labirinto">
+                <div class="activity-info">
+                    <span class="activity-number">18</span>
+                    <p>Labirinto divertido</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 19 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FAFAD2/000000?text=Números" alt="Atividade de Números">
+                <div class="activity-info">
+                    <span class="activity-number">19</span>
+                    <p>Aprendendo números</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 20 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/D8BFD8/000000?text=Letras" alt="Atividade de Letras">
+                <div class="activity-info">
+                    <span class="activity-number">20</span>
+                    <p>Aprendendo letras</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 21 a 50 - Continuando com mais atividades -->
+            <!-- Atividade 21 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFA07A/000000?text=Formas" alt="Atividade de Formas">
+                <div class="activity-info">
+                    <span class="activity-number">21</span>
+                    <p>Formas geométricas</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 22 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/20B2AA/FFFFFF?text=Cores" alt="Atividade de Cores">
+                <div class="activity-info">
+                    <span class="activity-number">22</span>
+                    <p>Aprendendo cores</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 23 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/87CEEB/000000?text=Animais" alt="Atividade de Animais">
+                <div class="activity-info">
+                    <span class="activity-number">23</span>
+                    <p>Conhecendo animais</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 24 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/98FB98/000000?text=Natureza" alt="Atividade de Natureza">
+                <div class="activity-info">
+                    <span class="activity-number">24</span>
+                    <p>Explorando natureza</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 25 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/F0E68C/000000?text=Esportes" alt="Atividade Esportiva">
+                <div class="activity-info">
+                    <span class="activity-number">25</span>
+                    <p>Esportes divertidos</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 26 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/E6E6FA/000000?text=Meditação" alt="Atividade de Relaxamento">
+                <div class="activity-info">
+                    <span class="activity-number">26</span>
+                    <p>Hora do relaxamento</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 27 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFF0F5/000000?text=Brincar" alt="Brincadeira Livre">
+                <div class="activity-info">
+                    <span class="activity-number">27</span>
+                    <p>Brincadeira livre</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 28 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/F5DEB3/000000?text=Histórias" alt="Hora da História">
+                <div class="activity-info">
+                    <span class="activity-number">28</span>
+                    <p>Hora da história</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 29 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFB6C1/000000?text=Amizade" alt="Atividade de Amizade">
+                <div class="activity-info">
+                    <span class="activity-number">29</span>
+                    <p>Brincando com amigos</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 30 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/9ACD32/FFFFFF?text=Meio+Ambiente" alt="Atividade Ambiental">
+                <div class="activity-info">
+                    <span class="activity-number">30</span>
+                    <p>Cuidando do planeta</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 31 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FF6347/FFFFFF?text=Faz-de-conta" alt="Atividade de Imaginação">
+                <div class="activity-info">
+                    <span class="activity-number">31</span>
+                    <p>Brincadeira de faz-de-conta</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 32 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/40E0D0/000000?text=Construção" alt="Atividade de Construção">
+                <div class="activity-info">
+                    <span class="activity-number">32</span>
+                    <p>Construindo com blocos</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 33 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/EE82EE/FFFFFF?text=Mágica" alt="Atividade de Mágica">
+                <div class="activity-info">
+                    <span class="activity-number">33</span>
+                    <p>Mágica divertida</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 34 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/F0E68C/000000?text=Piquenique" alt="Atividade de Piquenique">
+                <div class="activity-info">
+                    <span class="activity-number">34</span>
+                    <p>Piquenique no parque</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 35 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/B0C4DE/000000?text=Acampamento" alt="Atividade de Acampamento">
+                <div class="activity-info">
+                    <span class="activity-number">35</span>
+                    <p>Acampamento divertido</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 36 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/DDA0DD/FFFFFF?text=Pintura+Digital" alt="Pintura Digital">
+                <div class="activity-info">
+                    <span class="activity-number">36</span>
+                    <p>Pintura digital</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 37 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFD700/000000?text=Estrelas" alt="Atividade de Astronomia">
+                <div class="activity-info">
+                    <span class="activity-number">37</span>
+                    <p>Observando estrelas</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 38 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/98D8C8/000000?text=Reciclagem" alt="Atividade de Reciclagem">
+                <div class="activity-info">
+                    <span class="activity-number">38</span>
+                    <p>Arte com reciclagem</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 39 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFA07A/000000?text=Areia" alt="Atividade com Areia">
+                <div class="activity-info">
+                    <span class="activity-number">39</span>
+                    <p>Brincando com areia</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 40 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/9AC0CD/000000?text=Água" alt="Atividade com Água">
+                <div class="activity-info">
+                    <span class="activity-number">40</span>
+                    <p>Brincadeiras com água</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 41 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFE4E1/000000?text=Bolhas" alt="Atividade com Bolhas">
+                <div class="activity-info">
+                    <span class="activity-number">41</span>
+                    <p>Bolhas de sabão</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 42 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/E0EEE0/000000?text=Equilíbrio" alt="Atividade de Equilíbrio">
+                <div class="activity-info">
+                    <span class="activity-number">42</span>
+                    <p>Brincadeiras de equilíbrio</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 43 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FCE6C9/000000?text=Circuito" alt="Atividade de Circuito">
+                <div class="activity-info">
+                    <span class="activity-number">43</span>
+                    <p>Circuito divertido</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 44 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/CCFFCC/000000?text=Yoga" alt="Atividade de Yoga">
+                <div class="activity-info">
+                    <span class="activity-number">44</span>
+                    <p>Yoga para crianças</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 45 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFCCCC/000000?text=Pula+Pula" alt="Atividade de Pular">
+                <div class="activity-info">
+                    <span class="activity-number">45</span>
+                    <p>Brincadeiras de pular</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 46 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/CCCCFF/000000?text=Esconde-esconde" alt="Esconde-esconde">
+                <div class="activity-info">
+                    <span class="activity-number">46</span>
+                    <p>Esconde-esconde</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 47 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFFFCC/000000?text=Amarelinha" alt="Amarelinha">
+                <div class="activity-info">
+                    <span class="activity-number">47</span>
+                    <p>Amarelinha</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 48 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/FFDAB9/000000?text=Pega-pega" alt="Pega-pega">
+                <div class="activity-info">
+                    <span class="activity-number">48</span>
+                    <p>Pega-pega</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 49 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/E6E6FA/000000?text=Passa-anel" alt="Passa-anel">
+                <div class="activity-info">
+                    <span class="activity-number">49</span>
+                    <p>Passa-anel</p>
+                </div>
+            </div>
+            
+            <!-- Atividade 50 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300/F5F5DC/000000?text=Dança+das+cadeiras" alt="Dança das Cadeiras">
+                <div class="activity-info">
+                    <span class="activity-number">50</span>
+                    <p>Dança das cadeiras</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
